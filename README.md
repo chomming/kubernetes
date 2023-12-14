@@ -9,7 +9,14 @@ kubectl apply -f deployment.yaml로 생성 가능
 # ReplicaSet
 동일한 여러 pod가 동시에 실행될 수 있도록 관리
 
-service
+# service
+pod의 논리적 집합
+종류
+- ClusterIP : cluster 내부에서만 접근 가능한 IP
+- NodePort : Port 번호를 통해 외부에서 접근 가능
+- LoadBalancer : 외부의 LoadBalancer 사용
+- ExternalName  : kube-dns component로 DNS 이용
+
 # ingress
 외부 요청을 어떻게 처리할 것인지 정의
 담당
