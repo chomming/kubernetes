@@ -1,5 +1,6 @@
 # kubernetes
 deployment
+- replicaset의 상위 개념
 replicaset
 service
 pod
