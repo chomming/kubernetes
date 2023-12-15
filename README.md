@@ -47,7 +47,6 @@ master node
   - kube-scheduler : kubernetes의 pod/service 등을 node에 할당
   - kube-controller : kubernetes의 controller 생산 및 배포 관리
     - controller : cluster의 상태 관찰 --> 필요한 경우에 생산/변경 요청
-</br>
 worker node
 - 개발자가 정의한 container가 실행되는 노드
 - 구성요소
