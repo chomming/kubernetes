@@ -12,6 +12,8 @@ AWS의 EC2(인스턴스)와 동일
 pod와 ReplicaSet에 대한 배포 관리
 </br>
 kubectl apply -f deployment.yaml로 생성 가능
+</br>
+[기본 deployment.yaml](https://github.com/chomming/kubernetes/blob/main/deployment.yaml)
 
 # ReplicaSet
 동일한 여러 pod가 동시에 실행될 수 있도록 관리
