@@ -76,6 +76,10 @@ kubernetes에서 사용하는 container application의 기본 단위(가장 작�
 
 # DaemonSet
 cluster 전체 node에 특정 pod를 실행할 때 사용하는 controller
+</br>
+노드-로컬 기능을 제공하는 pod 정의
+</br>
+cluster를 운용하는 데 기본이 됨
 
 # Secret
 비밀번호, OAuth 토큰, ssh 키와 같은 민감 정보들을 저장하는 용도로 사용됨
@@ -84,11 +88,6 @@ container 안에 저장하지 않고, 별도로 보관 --> pod 실행 시 설정
 
 # Namespace
 단일 클러스터 내에서 환경 격리
-
-# DaemonSet
-노드-로컬 기능을 제공하는 pod 정의
-</br>
-cluster를 운용하는 데 기본이 됨
 
 # Custer와 Node의 관계
 
