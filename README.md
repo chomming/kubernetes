@@ -20,7 +20,7 @@ pod의 논리적 집합
 - LoadBalancer : 외부의 LoadBalancer 사용
 - ExternalName  : kube-dns component로 DNS 이용
 
-# ingress
+# Ingress
 외부 요청을 어떻게 처리할 것인지 정의
 </br>
 담당
@@ -67,7 +67,7 @@ kubernetes에서 사용하는 container application의 기본 단위(가장 작�
 # DaemonSet
 cluster 전체 node에 특정 pod를 실행할 때 사용하는 controller
 
-# secret
+# Secret
 비밀번호, OAuth 토큰, ssh 키와 같은 민감 정보들을 저장하는 용도로 사용됨
 </br>
 container 안에 저장하지 않고, 별도로 보관 --> pod 실행 시 설정을 통해 container에 제공해줌
