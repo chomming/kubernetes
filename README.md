@@ -1,8 +1,13 @@
+# 진행 과정
+ALB --> 대상 그룹 --> Node --> Pod
+
 # Cluster
 node들의 집합
 
 # Deployment
 ReplicaSet의 상위 개념
+</br>
+AWS의 EC2(인스턴스)와 동일
 </br>
 pod와 ReplicaSet에 대한 배포 관리
 </br>
@@ -11,8 +16,10 @@ kubectl apply -f deployment.yaml로 생성 가능
 # ReplicaSet
 동일한 여러 pod가 동시에 실행될 수 있도록 관리
 
-# service
+# Service
 pod의 논리적 집합
+</br>
+AWS의 대상 그룹과 동일
 </br>
 종류
 - ClusterIP : cluster 내부에서만 접근 가능한 IP
@@ -22,6 +29,8 @@ pod의 논리적 집합
 
 # Ingress
 외부 요청을 어떻게 처리할 것인지 정의
+- 어디로 가세요
+AWS의 ALB와 동일
 </br>
 담당
 - 특정 경로로 들어온 요청을 어떤 서비스로 전달할지 정의하는 라우팅 규칙
