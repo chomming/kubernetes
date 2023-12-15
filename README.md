@@ -36,6 +36,7 @@ AWS의 ALB와 동일
 - 특정 경로로 들어온 요청을 어떤 서비스로 전달할지 정의하는 라우팅 규칙
 - 가상 호스트 기반의 요청 처리
 - SSL/TLS 보안 연결 처리
+[ingress.yaml](https://github.com/chomming/kubernetes/blob/main/ingress.yaml)
 
 # Role
 권한 모음
