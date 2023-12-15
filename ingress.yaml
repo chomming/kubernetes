@@ -2,12 +2,12 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: minimal-ingress
-  annotations:
+  annotations: //리소스 특성 기록
     nginx.ingress.kubernetes.io/rewrite-target: /
-spec:
+spec: //앞으로 해야 하는 역할
   ingressClassName: nginx-example
-  rules:
-  - http:
+  rules: //ALB의 리스너 및 규칙
+  - http: //ALB의 HTTP 헤더
       paths:
       - path: /testpath
         pathType: Prefix
