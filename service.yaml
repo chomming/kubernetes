@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:  
+	name: hello-node-svc
+spec:
+	selector:
+		app:
+	type: NodePort // 서비스 공개 방법 설정
+	ports:    // 서비스에 의해 공개되는 포트번호
+  - nodePort: // 외부에서 접속하기 위해 사용하는 포트
+    port: //cluster 내부에서 사용할 서비스 포트
+    targetPort: // pod
+		- name: http
+          port: 80 
+		  protocol: TCP      
+          targetPort: 8080    
+        - name: https      
+          port: 443      
+	      protocol: TCP
+          targetPort: // deployment 포트번호
