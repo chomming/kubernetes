@@ -3,7 +3,9 @@ node들의 집합
 
 # Deployment
 ReplicaSet의 상위 개념
+</br>
 pod와 ReplicaSet에 대한 배포 관리
+</br>
 kubectl apply -f deployment.yaml로 생성 가능
 
 # ReplicaSet
@@ -11,6 +13,7 @@ kubectl apply -f deployment.yaml로 생성 가능
 
 # service
 pod의 논리적 집합
+</br>
 종류
 - ClusterIP : cluster 내부에서만 접근 가능한 IP
 - NodePort : Port 번호를 통해 외부에서 접근 가능
@@ -19,6 +22,7 @@ pod의 논리적 집합
 
 # ingress
 외부 요청을 어떻게 처리할 것인지 정의
+</br>
 담당
 - 특정 경로로 들어온 요청을 어떤 서비스로 전달할지 정의하는 라우팅 규칙
 - 가상 호스트 기반의 요청 처리
@@ -35,6 +39,7 @@ kubernetes cluster 내에서 실행되는 pod가 API 서버와 상호 작용할 
 
 # Node
 가상머신
+</br>
 master node
 - kubernetes cluster 관리 시스템
 - 구성요소
@@ -42,6 +47,7 @@ master node
   - kube-scheduler : kubernetes의 pod/service 등을 node에 할당
   - kube-controller : kubernetes의 controller 생산 및 배포 관리
     - controller : cluster의 상태 관찰 --> 필요한 경우에 생산/변경 요청
+</br>
 worker node
 - 개발자가 정의한 container가 실행되는 노드
 - 구성요소
@@ -56,6 +62,7 @@ worker node
 
 # Pod
 kubernetes에서 사용하는 container application의 기본 단위(가장 작은 배포 단위)
+</br>
 고유의 cluster IP를 가짐
 
 # DaemonSet
@@ -63,4 +70,5 @@ cluster 전체 node에 특정 pod를 실행할 때 사용하는 controller
 
 # secret
 비밀번호, OAuth 토큰, ssh 키와 같은 민감 정보들을 저장하는 용도로 사용됨
+</br>
 container 안에 저장하지 않고, 별도로 보관 --> pod 실행 시 설정을 통해 container에 제공해줌
