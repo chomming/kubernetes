@@ -57,8 +57,7 @@ kubernetes cluster 내에서 실행되는 pod가 API 서버와 상호 작용할 
 </br>
 master node
 - kubernetes cluster 관리 시스템
-</br>
-* 구성요소
+- 구성요소
   * kube-apiserver : kubernetes의 중심이 되는 요소
   * kube-scheduler : kubernetes의 pod/service 등을 node에 할당
   * kube-controller : kubernetes의 controller 생산 및 배포 관리
