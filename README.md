@@ -1,5 +1,5 @@
 # 들어오는 과정
-##### ALB --> 대상 그룹 --> Node --> Pod
+ALB --> 대상 그룹 --> Node --> Pod
 
 # Cluster
 node들의 집합
