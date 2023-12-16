@@ -24,10 +24,10 @@ pod의 논리적 집합
 AWS의 대상 그룹과 동일
 </br>
 종류
-- ClusterIP : cluster 내부에서만 접근 가능한 IP
-- NodePort : Port 번호를 통해 외부에서 접근 가능
-- LoadBalancer : 외부의 LoadBalancer 사용
-- ExternalName  : kube-dns component로 DNS 이용
+* ClusterIP : cluster 내부에서만 접근 가능한 IP
+* NodePort : Port 번호를 통해 외부에서 접근 가능
+* LoadBalancer : 외부의 LoadBalancer 사용
+* ExternalName  : kube-dns component로 DNS 이용
 </br>
 [기본 service.yaml](https://github.com/chomming/kubernetes/blob/main/service.yaml)
 
@@ -37,9 +37,9 @@ AWS의 대상 그룹과 동일
 AWS의 ALB와 동일
 </br>
 담당
-- 특정 경로로 들어온 요청을 어떤 서비스로 전달할지 정의하는 라우팅 규칙
-- 가상 호스트 기반의 요청 처리
-- SSL/TLS 보안 연결 처리
+* 특정 경로로 들어온 요청을 어떤 서비스로 전달할지 정의하는 라우팅 규칙
+* 가상 호스트 기반의 요청 처리
+* SSL/TLS 보안 연결 처리
 </br>
 [기본 ingress.yaml](https://github.com/chomming/kubernetes/blob/main/ingress.yaml)
 
@@ -60,10 +60,10 @@ master node
 </br>
 - 구성요소
 </br>
-  - kube-apiserver : kubernetes의 중심이 되는 요소
-  - kube-scheduler : kubernetes의 pod/service 등을 node에 할당
-  - kube-controller : kubernetes의 controller 생산 및 배포 관리
-  - controller : cluster의 상태 관찰 --> 필요한 경우에 생산/변경 요청
+  * kube-apiserver : kubernetes의 중심이 되는 요소
+  * kube-scheduler : kubernetes의 pod/service 등을 node에 할당
+  * kube-controller : kubernetes의 controller 생산 및 배포 관리
+  * controller : cluster의 상태 관찰 --> 필요한 경우에 생산/변경 요청
 </br>
 worker node
 - 개발자가 정의한 container가 실행되는 노드
