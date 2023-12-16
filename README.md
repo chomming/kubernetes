@@ -65,16 +65,16 @@ master node
   * controller : cluster의 상태 관찰 --> 필요한 경우에 생산/변경 요청
 </br>
 worker node
-- 개발자가 정의한 container가 실행되는 노드
-- 구성요소
-  - kubelet
-    - pod를 생성하기 위해 container runtime에 요청
-    - object의 상태 모니터링 및 체크 --> kube-apiserver에 전달
-  - kube-proxy
-    - 각 노드에서 실행됨
-    - 각 서비스에게 도달하는 데 사용됨
-    - node에 오는 트래픽을 적절히 라우팅해줌
-  - container runtime : container 실행 구성요소
+* 개발자가 정의한 container가 실행되는 노드
+* 구성요소
+  * kubelet
+    * pod를 생성하기 위해 container runtime에 요청
+    * object의 상태 모니터링 및 체크 --> kube-apiserver에 전달
+   * kube-proxy
+     * 각 노드에서 실행됨
+     * 각 서비스에게 도달하는 데 사용됨
+     * node에 오는 트래픽을 적절히 라우팅해줌
+   * container runtime : container 실행 구성요소
 
 # Pod
 kubernetes에서 사용하는 container application의 기본 단위(가장 작은 배포 단위)
