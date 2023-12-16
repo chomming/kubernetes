@@ -56,11 +56,17 @@ kubernetes cluster 내에서 실행되는 pod가 API 서버와 상호 작용할 
 가상머신
 </br>
 master node
+</br>
 - kubernetes cluster 관리 시스템
+</br>
 - 구성요소
+</br>
   - kube-apiserver : kubernetes의 중심이 되는 요소
+    </br>
   - kube-scheduler : kubernetes의 pod/service 등을 node에 할당
+    </br>
   - kube-controller : kubernetes의 controller 생산 및 배포 관리
+    </br>
     - controller : cluster의 상태 관찰 --> 필요한 경우에 생산/변경 요청
 </br>
 worker node
@@ -96,6 +102,7 @@ container 안에 저장하지 않고, 별도로 보관 --> pod 실행 시 설정
 단일 클러스터 내에서 환경 격리
 
 # Custer와 Node의 관계
+![image](https://github.com/chomming/kubernetes/assets/81208053/74b7150a-d4cd-433e-9e5c-83ba21aab042)
 
 # 배포 전략
 변경사항이 생겼을 때, 빠르게 반영할 수 있도록 구성
