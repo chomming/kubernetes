@@ -81,8 +81,7 @@
 - 단일 클러스터 내에서 환경 격리
 
 # Cluster와 Node의 관계
-![KakaoTalk_20231216_144312210](https://github.com/chomming/kubernetes/assets/81208053/d3e6acfb-8106-4c83-bdd1-8bb9fa6d7042)
-
+![KakaoTalk_20231217_154749773](https://github.com/chomming/kubernetes/assets/81208053/b78de947-d0d7-4e83-97ae-6be92823c25c)
 
 # 배포 전략
 - 변경사항이 생겼을 때, 빠르게 반영할 수 있도록 구성
